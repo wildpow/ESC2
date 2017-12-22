@@ -1,0 +1,385 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  margin-top: -13px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.company__name {
+  align-self: center;
+  margin-top: -26px;
+  padding: 10px;
+  text-shadow:0 0 1px transparent;
+  color: #c62828;
+  font-size: 1.6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 12px;
+}
+
+.company__name span {
+  color: #1565c0;
+  font-style: italic;
+}
+.border__box {
+  /* background-color: #999999; */
+  /* background-color: white; */
+  border: 2px solid black;
+  box-shadow: 0 10px 6px -6px rgba(119, 119, 119, .9); 
+  border-top-left-radius: .11rem;
+  border-top-right-radius: .11rem;
+}
+
+.comapny__logo {
+  z-index: 1000;
+  align-self: center;
+  max-height: 6.5em;
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* background-image: linear-gradient(to bottom, #999999 0%, #DDDDDD 50%, #FFFFFF 100%); */
+}
+
+.Tag__line {
+  padding: 5px;
+  color: #ffffff;
+  background-color: #1565c0;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  font-variant: small-caps;
+  text-align: center;
+  line-height: 1.6rem;
+  word-spacing: .10rem;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  font-family: 'Raleway', sans-serif;
+  align-self: center;
+  margin: 0;
+  /* margin-top: 5px; */
+}
+.contact {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  color: #ffffff; 
+  background-color: #c62828;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* margin-bottom: 10px; */
+  padding: 5px;
+}
+.hours {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+
+}
+.hours p {
+  margin-top: 4px;
+  margin: 0;
+  font-variant: small-caps;
+}
+.hours span {
+  text-decoration: underline;
+}
+
+.fb__box {
+  margin-top: 4px;
+  font-size: .8rem;
+  display: flex;
+  flex-direction: row;
+  font-size: .9rem;
+  text-align: center;
+}
+.fb__box a {
+  transition: all .2s ease-in-out;
+}
+.fb__box a:hover {
+  transform: scale(1.2);
+}
+.fb__img {
+  max-width: 3.5em;
+  padding-right: 5px;
+}
+.phone__box {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  text-align: center;
+}
+.phone-icon {
+  max-width: 3.9em;
+  padding-left: 10px;
+}
+.Contact__info {
+  display: flex;
+  flex-direction: column;
+}
+.Contact__info p {
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0;
+  font-size: 1rem;
+}
+.Address__Info {
+  display: none;
+}
+.map {
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+iframe {
+  align-self: center;
+}
+footer {
+  background-color: #FFFFFF !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: underline #1565c0;
+  margin-top: 10px;
+}
+footer p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.Brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Brands a {
+  align-self: center;
+  transition: all .2s ease-in-out; 
+}
+.Brands a:hover {
+  transform: scale(1.2);
+} 
+.Stearns {
+  max-height: 1.45em;
+  margin-left: 20px;
+}
+.Sealy {
+  max-height: 2.5em;
+  margin-left: 30px;
+}
+.Tempur {
+  margin-left: 20px;
+  max-height: 3em;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 412px) {
+  iframe {
+    width: 380px;
+  }
+  .contact {
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .company__name {
+    font-size: 4rem;
+    margin-top: -47px;
+  }
+  .comapny__logo {
+    max-height: 12em;
+  }
+  header {
+    margin-top: -22px;
+  }
+  .Tag__line {
+    padding: 20px;
+    font-size: 2rem;
+    padding-right: 90px;
+    padding-left: 90px; /* Not sure thats right */
+    /* margin-top: 30px; */
+  }
+  .Address__Info {
+    display: flex;
+    flex-direction: column;
+  }
+  .Address__Info p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-variant: small-caps;
+  }
+  address p {
+    margin: 0 !important;
+  }
+  address {
+    margin-top: 5px;
+    font-size: 1.3rem;
+    align-self: center;
+    font-variant: small-caps;
+  }
+  .fb__box {
+    margin-top: 10px;
+  }
+  .Stearns {
+    max-height: 3em;
+    margin-left: 30px;
+  }
+  .Sealy {
+    max-height: 4em;
+    margin-left: 50px;
+    
+  }
+  .Tempur {
+    max-height: 7em;
+  }
+  footer p {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 2em;
+  }
+  iframe {
+    padding: 20px;
+    height: 300px;
+    width:  450px;
+  }
+  
+  .contact {
+    /* margin-bottom: 20px; */
+    padding: 25px;
+  }
+  .hours {
+    font-size: 1.3rem;
+  }
+  .hours p {
+    margin-top: 5px;
+  }
+  .Contact__info p {
+    font-size: 1.3rem;
+  }
+  .phone-icon {
+    max-width: 5.0em;
+  }
+  .fb__img {
+    max-width: 4.5em;
+    padding-right: 5px;
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .Address__Info p {
+    margin-top: 0;
+  }
+  .Tag__line {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+  .contact {
+    margin-top: 20px;
+  }
+  .map {
+    padding: 20px;
+    /* margin-top: 20px; */
+  }
+  
+}
+@media(min-width: 1024px) {
+  iframe {
+    width: 600px;
+    height: 500px;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .Tag__line {
+    padding: 40px;
+    /* margin-top: 4rem; */
+    padding-right: 200px;
+    padding-left: 200px;
+    font-size: 2.5rem;
+    word-spacing: .6rem;
+    line-height: 2rem;
+  }
+  address {
+    margin-top: 5px;
+    font-size: 2rem;
+    align-self: center;
+    font-variant: small-caps;
+  }
+  .hours span, .Address__Info p, .Contact__info p{
+    font-size: 1.6rem;
+  }
+  .hours {
+    font-size: 2rem;
+  }
+  .fb__img {
+    padding-top: 5px;
+    max-width: 7em;
+    padding-right: 15px;
+  }
+  .phone-icon {
+    padding-top: 5px;
+    max-width: 7.5em;
+    padding-left: 20px
+  }
+  iframe {
+    height: 350px;
+    width:  500px;
+  }
+  footer {
+    margin-top: 15px;
+  }
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
