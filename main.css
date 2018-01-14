@@ -1,3 +1,5 @@
+
+
 html {
   box-sizing: border-box;
 }
@@ -16,11 +18,11 @@ header {
 .company__name {
   align-self: center;
   margin-top: -26px;
-  padding: 10px;
+  padding: 5px 15px 5px 15px;
   text-shadow:0 0 1px transparent;
-  color: #c62828;
-  font-size: 1.6rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #eb1c24;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 12px;
 }
 
@@ -54,7 +56,7 @@ main {
 }
 
 .Tag__line {
-  padding: 5px;
+  padding: 15px;
   color: #ffffff;
   background-color: #1565c0;
   /* padding-left: 5px;
@@ -62,7 +64,8 @@ main {
   font-variant: small-caps;
   text-align: center;
   line-height: 1.6rem;
-  word-spacing: .10rem;
+  word-spacing: .11rem;
+  /* letter-spacing: .05rem; */
   font-size: 1.1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   font-family: 'Open Sans', sans-serif;
@@ -73,13 +76,13 @@ main {
 .contact {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   color: #ffffff; 
-  background-color: #c62828;
+  background-color: #eb1c24;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   /* margin-bottom: 10px; */
-  padding: 5px;
+  padding: 10px 5px 10px 5px;
 }
 .hours {
   display: flex;
@@ -159,6 +162,7 @@ footer {
   text-align: center;
   text-decoration: underline #1565c0;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 footer p {
   margin-top: 2px;
@@ -191,9 +195,10 @@ footer p {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+/* padding-left and right used to be 15px */
 @media (min-width: 412px) {
   iframe {
     width: 380px;
@@ -204,6 +209,8 @@ footer p {
 }
 @media (min-width: 768px) {
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 750px;
   }
   .company__name {
@@ -382,4 +389,46 @@ footer p {
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+/* .sale-content {
+  margin-top: 5px;
+} */
+
+.Sale_img {
+  max-height: 220px;
+  max-width: 300px;
+  align-self: center;
+}
+
+.Sale_img-container {
+  display: flex;
+  justify-content: center;
+  background-color: #eb1c24;
+}
+.Sale-text {
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  line-height: 1.3rem;
+  word-spacing: .10rem;
+  font-size: 1rem;
+}
+.Sale {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Sale-sm-print {
+  font-size: .8rem;
+}
+.Sale-headline {
+  font-size: 1.3rem;
 }
