@@ -42,7 +42,8 @@ html { box-sizing: border-box; }
 }
 @media (min-width: 412px) {
   .new-site {
-    font-size: .7rem
+    font-size: .7rem;
+    padding: 7px;
   }
 }
 @media (min-width: 768px) {
@@ -56,9 +57,11 @@ html { box-sizing: border-box; }
     font-size: 2rem;
     padding-right: 90px;
     padding-left: 90px;
+    padding-bottom: 30px;
   }
   .new-site {
-    font-size: 1.1rem
+    font-size: 1.1rem;
+    padding: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -70,9 +73,16 @@ html { box-sizing: border-box; }
   .Tag__line {
     padding-right: 130px;
     padding-left: 130px;
+    font-size: 2.1rem;
+    word-spacing: .6rem;
+    line-height: 2rem;
   }
 }
 @media (min-width: 1200px) {
+  .new-site {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
   .container {
     width: 1170px;
     padding-left: 120px;
@@ -84,7 +94,7 @@ html { box-sizing: border-box; }
     padding-left: 200px;
     font-size: 2.5rem;
     word-spacing: .6rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
   }
 }
 
