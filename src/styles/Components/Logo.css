@@ -33,9 +33,14 @@ header {
   }
   .company__name {
     font-size: 4rem;
-    margin-top: -47px;
+    margin-top: -44px;
   }
   .comapny__logo {
     max-height: 11em;
+  }
+}
+@media (min-width: 1024px) {
+  .company__name {
+    margin-top: -44px;
   }
 }
