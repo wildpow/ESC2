@@ -1,0 +1,41 @@
+header {
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.comapny__logo {
+  z-index: 1000;
+  align-self: center;
+  max-height: 6.5em;
+}
+
+.company__name {
+  align-self: center;
+  margin-top: -26px;
+  padding: 5px 15px 5px 15px;
+  text-shadow:0 0 1px transparent;
+  color: #eb1c24;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 12px;
+}
+
+.company__name span {
+  color: #1565c0;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-top: -22px;
+  }
+  .company__name {
+    font-size: 4rem;
+    margin-top: -47px;
+  }
+  .comapny__logo {
+    max-height: 11em;
+  }
+}
